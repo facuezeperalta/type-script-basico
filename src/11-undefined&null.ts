@@ -11,7 +11,7 @@
 
   myString = 'facundo ezequiel peralta';
 
-  function saludar (name:string){
+/*   function saludar (name:string){
     let hello = 'Hola ';
     if(name){
       hello += name;
@@ -19,5 +19,14 @@
       hello += 'nobody';
     }
     console.log(hello);
+  } */
+
+  function hiv2 (name: string | null){
+    let hello = 'Hola, lo paso a mayúsculas:  ';
+    hello += name?.toUpperCase() || 'nobody';
+    console.log(hello);
   }
+
+  hiv2('ezequiel');
+  hiv2(null);
 })();
