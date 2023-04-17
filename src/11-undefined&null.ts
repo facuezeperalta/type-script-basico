@@ -4,7 +4,8 @@
   let myNull: null;
   let myUndefined: undefined = undefined;
 
-  let myNumber: number | null = null;
+  let myNumber: number | null = null; //Angular cuando evalua componentes dinámicos y hasta que no carga el template no cambia de valor, y empieza por defecto en null.
+
 
   let myString: string | undefined = undefined;
 
